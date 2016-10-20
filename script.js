@@ -1,4 +1,4 @@
-for (int i =0; i<100; i++)
+for (i =0; i<100; i++)
 {
 var request = new XMLHttpRequest();
 request.open('GET', 'data.txt');
