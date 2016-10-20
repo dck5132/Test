@@ -11,13 +11,13 @@ request.onreadystatechange = function() {
 	{
 	console.log(request.responseXML.getElementsByTagName('name')[1].firstChild.nodeValue);
 	
-	var items = request.responseXML.getElementsByTagName('name');
-	var output = '<ul>';
-	for (var i; i< items.length; i++){
+		var items = request.responseXML.getElementsByTagName('name');
+		var output = '<ul>';
+	for (var i = 0; i < items.length; i++) {
 		output += '<li>' + items[i].firstChild.nodeValue + '</li>';
 		}
 		
-		output += '</ul>'; 
+		output += '</ul>';
 		
 		document.getElementById('update').innerHTML = output;
 	}
