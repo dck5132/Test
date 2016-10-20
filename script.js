@@ -10,7 +10,7 @@ request.onreadystatechange = function() {
 	if ((request.readyState===4) && (request.status===200))
 {
 var modify = document.getElementsByTagName('li');
-modify.[2]innerHTML = request.responseText;
+modify[2].innerHTML = request.responseText;
 
 }
 }
