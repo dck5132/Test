@@ -9,6 +9,6 @@ console.log(request);
 document.writeln(request.responseText);
 }
 }
-
-request.send();
 }
+request.send();
+
