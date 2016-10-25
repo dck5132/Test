@@ -1,3 +1,6 @@
+$('#update').load('data.txt');
+
+// AJAX NO JQUERY
 /* var mybutton = document.getElementById('loadbutton');
 mybutton.onclick = loadAJAX;
 
