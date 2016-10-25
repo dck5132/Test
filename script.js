@@ -1,4 +1,4 @@
-var mybutton = document.getElementById('loadbutton');
+/* var mybutton = document.getElementById('loadbutton');
 mybutton.onclick = loadAJAX;
 
 function loadAJAX() {
@@ -28,3 +28,4 @@ function loadAJAX() {
 
 }
 
+ */
