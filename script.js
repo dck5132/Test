@@ -6,7 +6,7 @@ $.getJSON('data.json', function(data) {
 		output+= '</li>';
 	});
 	output += '</ul>';
-	$('.update').html(output);
+	$('#update').html(output);
 });
 
 
