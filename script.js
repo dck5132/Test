@@ -1,4 +1,6 @@
 $('#search').keyup(function () {
+	var searchFeild = $('#search').val();
+	console.log(searchFeild);
 	$.getJSON('data.json', function(data) {
 		var output = '<ul class="search_results">';
 		$.each(data, function (key, val) {
