@@ -4,7 +4,7 @@ $.getJSON('data.json', function(data) {
 		output += '<li>' + val.name + '</li>';
 	});
 	output += '</ul>';
-	$('#update').append(output);
+	$('#update').prepend(output);
 });
 
 
