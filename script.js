@@ -1,14 +1,16 @@
-$.getJSON('data.json', function(data) {
-	var output = '<ul class="search_results">';
-	$.each(data, function (key, val) {
-		output+= '<li>';
-		output+= '<h2>' + val.name + '</h2>';
-		output+= '<img src="images/' + val.shortname + '_tn.jpg" alt="" />';
-		output+= '<p>' + val.bio + '</p>';
-		output+= '</li>';
+$('#search').keyup(function () {
+	$.getJSON('data.json', function(data) {
+		var output = '<ul class="search_results">';
+		$.each(data, function (key, val) {
+			output+= '<li>';
+			output+= '<h2>' + val.name + '</h2>';
+			output+= '<img src="images/' + val.shortname + '_tn.jpg" alt="" />';
+			output+= '<p>' + val.bio + '</p>';
+			output+= '</li>';
+		});
+		output += '</ul>';
+		$('#update').html(output);
 	});
-	output += '</ul>';
-	$('#update').html(output);
 });
 
 
