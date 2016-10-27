@@ -1,4 +1,13 @@
-
+$.getJSON('data.json', function(data) {
+	var output = '<ul class="search_results">';
+	$.each(data, function (key, val) {
+		output+= '<li>';
+		output+= '<h2>' + val.name + '</h2>';
+		output+= '</li>';
+	});
+	output += '</ul>';
+	$('.update').html(output);
+});
 
 
 // Jquery-JSON call to list speaker names in unordered list in div update
