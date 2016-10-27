@@ -1,4 +1,4 @@
-$('#update').load('data.txt');
+$('#update').load('datas.txt');
 
 // AJAX NO JQUERY
 /* var mybutton = document.getElementById('loadbutton');
