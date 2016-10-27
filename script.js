@@ -1,11 +1,15 @@
-$.getJSON('data.json', function(data) {
+
+
+
+// Jquery-JSON call to list speaker names in unordered list in div update
+/* $.getJSON('data.json', function(data) {
 	var output = '<ul>';
 	$.each(data, function(key, val) {
 		output += '<li>' + val.name + '</li>';
 	});
 	output += '</ul>';
 	$('#update').prepend(output);
-});
+}); */
 
 
 // AJAX Jquery with even selector 
