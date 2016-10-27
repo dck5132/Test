@@ -4,7 +4,7 @@ $('#search').keyup(function () {
 	$.getJSON('data.json', function(data) {
 		var output = '<ul class="search_results">';
 		$.each(data, function (key, val) {
-			if (val.name.search(myExp) != -1) {
+			if ((val.name.search(myExp) != -1) || (val.bio.search(myExp) != -1) {
 				output+= '<li>';
 				output+= '<h2>' + val.name + '</h2>';
 				output+= '<img src="images/' + val.shortname + '_tn.jpg" alt="" />';
