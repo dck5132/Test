@@ -1,4 +1,10 @@
-$('.update:even').load('data.txt');
+$.getJSON('data.json', function(data) {
+	console.log(data);
+});
+
+
+// AJAX Jquery with even selector 
+//$('.update:even').load('data.txt');
 
 // AJAX NO JQUERY
 /* var mybutton = document.getElementById('loadbutton');
